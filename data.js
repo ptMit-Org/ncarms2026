@@ -71,20 +71,17 @@ export const conferenceData = {
         { name: "Dr. Sarah Chen", title: "Director of Smart Cities", institution: "MIT", topic: "Urban Planning", image: "assets/image.png" },
         { name: "Julian Ross", title: "Founder", institution: "Decentralized Dev", topic: "Blockchain", image: "assets/image.png" },
         // Add more speakers here to test the carousel logic later
-        { name: "Dr. A. Kumar", title: "Professor", institution: "IIT Madras", topic: "Machine Learning", image: "assets/image.png" },
+        // { name: "Dr. A. Kumar", title: "Professor", institution: "IIT Madras", topic: "Machine Learning", image: "assets/image.png" },
     ],
 
     // --- ORGANIZING COMMITTEE (Stacked Grid) ---
-    organizingCommittee: [
-        // Leadership Team
-        { name: "Dr. R. Velraj", title: "Chief Patron", image: "assets/image.png" },
-        { name: "Dr. J. Prakash", title: "Patron", image: "assets/image.png" },
-        { name: "Dr. K. Ravichandran", title: "Co-Patron", image: "assets/image.png" },
-        { name: "Dr. A. Siddharthan", title: "Convener", image: "assets/image.png" },
-        { name: "Mr. C. Shunmuganathan", title: "Program Chair", image: "assets/image.png" },
-        { name: "Dr. G. B. Bhaskar", title: "Coordinator", image: "assets/image.png" },
-        { name: "Dr. S. Vijayakumar", title: "Co-Coordinator", image: "assets/image.png" },
-        { name: "Dr. S. Sathish", title: "Co-Coordinator", image: "assets/image.png" },
+   organizingCommittee: [
+        { name: "Dr. P. Shankar, I.A.S", title: "Chief Patron", position: "Dean", image: "assets/image.png" },
+        { name: "Dr. S. Visakan, I.A.S.", title: "Chief Patron", position: "Dean", image: "assets/image.png" },
+        { name: "Dr. B.T.N. Sridhar", title: "Chief Patron", position: "Dean", image: "assets/image.png" },
+        { name: "Dr. V. Kumaresan", title: "Patron", position: "Dean", image: "assets/image.png" },
+        { name: "Dr. P. Jayashree", title: "Co-Patron", position: "Dean", image: "assets/image.png" },
+        { name: "Dr. J. Jancirani", title: "Chair", position: "HOD", image: "assets/image.png" }
     ],
 
     // --- SUPPORT COMMITTEE (Similar style to Organizing) ---
@@ -110,20 +107,20 @@ export const conferenceData = {
         { name: "Mr. S. Mohamed Shazuli", title: "", image: "assets/image.png" }
     ],
     internationalAdvisory: [
-    { name: "Prof. Ajayan Vinu", title: "The University of New Castle, Australia" },
-    { name: "Prof. Angelos Markopoulos", title: "National Technical University of Athens, Greece" },
-    { name: "Prof. Balu Balachandran", title: "Argonne National Laboratory, USA" },
-    { name: "Prof. Chao-Ming Huang", title: "Kun Shan University, Taiwan" },
-    { name: "Prof. Hiroya Ikeda", title: "Shizuoka University, Japan" },
-    { name: "Prof. Ioannis E. Sarris", title: "University of West Attica, Greece" },
-    { name: "Prof. Jovana Radulovic", title: "University of Portsmouth, England" },
-    { name: "Prof. Kozo Fujiwara", title: "Tohoku University, Japan" },
-    { name: "Prof. Luisa F. Cabeza", title: "University of Lleida, Spain" },
-    { name: "Prof. Manoj Gupta", title: "National University of Singapore, Singapore" },
-    { name: "Prof. Marc A. Rosen", title: "Ontario Tech University, Canada" },
-    { name: "Prof. Mohd Fadzli Bin Abdollah", title: "Universiti Teknikal Malaysia Melaka, Malaysia" },
-    { name: "Prof. Yasuhiro Hayakawa", title: "Shizuoka University, Japan" },
-    { name: "Dr. Nishanth Pushparaj", title: "The University of Nottingham, Nottingham" }
+    // { name: "Prof. Ajayan Vinu", title: "The University of New Castle, Australia" },
+    // { name: "Prof. Angelos Markopoulos", title: "National Technical University of Athens, Greece" },
+    // { name: "Prof. Balu Balachandran", title: "Argonne National Laboratory, USA" },
+    // { name: "Prof. Chao-Ming Huang", title: "Kun Shan University, Taiwan" },
+    // { name: "Prof. Hiroya Ikeda", title: "Shizuoka University, Japan" },
+    // { name: "Prof. Ioannis E. Sarris", title: "University of West Attica, Greece" },
+    // { name: "Prof. Jovana Radulovic", title: "University of Portsmouth, England" },
+    // { name: "Prof. Kozo Fujiwara", title: "Tohoku University, Japan" },
+    // { name: "Prof. Luisa F. Cabeza", title: "University of Lleida, Spain" },
+    // { name: "Prof. Manoj Gupta", title: "National University of Singapore, Singapore" },
+    // { name: "Prof. Marc A. Rosen", title: "Ontario Tech University, Canada" },
+    // { name: "Prof. Mohd Fadzli Bin Abdollah", title: "Universiti Teknikal Malaysia Melaka, Malaysia" },
+    // { name: "Prof. Yasuhiro Hayakawa", title: "Shizuoka University, Japan" },
+    // { name: "Dr. Nishanth Pushparaj", title: "The University of Nottingham, Nottingham" }
 ],
 
 

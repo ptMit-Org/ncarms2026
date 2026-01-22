@@ -52,6 +52,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Base */
 body {
     font-family: var(--font-main);
@@ -184,6 +188,65 @@ h2 {
 /* Mobile button (still hidden for now) */
 .mobile-menu-btn {
     display: auto;
+}
+
+
+/* ribbon section */
+
+/* =========================================
+   SCROLLING RIBBON (Ticker)
+   ========================================= */
+#scrolling-ribbon {
+    position: fixed;
+    top: 70px; /* Pushes it exactly below your 70px Navbar */
+    left: 0;
+    width: 100%;
+    height: 40px; /* Slim ribbon height */
+    background: #ffcc00; /* Alert Yellow */
+    color: #000;
+    z-index: 998; /* Below Nav (1000) but above Hero */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #e6b800;
+}
+
+.ribbon-track {
+    display: flex;
+    white-space: nowrap; /* Forces text to stay in one line */
+    will-change: transform;
+    padding-top: 10px;
+    animation: scroll-text 30s linear infinite; /* Adjust speed (30s) here */
+}
+
+.ribbon-item {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 60px; /* Space between alerts */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ribbon-item::before {
+    content: "•"; /* Bullet point separator */
+    color: #d32f2f; /* Red dot for attention */
+    font-size: 1.5rem;
+    line-height: 0;
+}
+
+/* The Animation Logic */
+@keyframes scroll-text {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+}
+
+/* Hover to pause (Optional: remove if you want constant movement) */
+#scrolling-ribbon:hover .ribbon-track {
+    animation-play-state: paused;
 }
 
 /* =========================================================
@@ -372,27 +435,7 @@ h2 {
    4. SPEAKERS – FLUID, BALANCED, CAROUSEL-SAFE
    ========================================================= */
 
-/* ---- Carousel wrapper ---- */
-.speaker-carousel-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: clamp(16px, 3vw, 24px);
-}
 
-/* ---- Track container ---- */
-.speaker-track-container {
-    overflow: hidden;
-    flex: 1;
-    padding: clamp(14px, 3vw, 20px) 0;
-}
-
-/* ---- Track ---- */
-.speaker-track {
-    display: flex;
-    gap: clamp(20px, 4vw, 32px);
-    align-items: stretch;
-}
 
 /* ---- Speaker card ---- */
 .speaker-card {
@@ -470,67 +513,33 @@ h2 {
     border-radius: 999px;
     text-transform: uppercase;
 }
-
 /* =========================================================
-   SPEAKER NAVIGATION – FLUID CONTROLS
+   SPEAKERS – STATIC 4-COLUMN GRID
    ========================================================= */
 
-.nav-btn {
-    width: clamp(44px, 6vw, 56px);
-    height: clamp(44px, 6vw, 56px);
-
-    border-radius: 50%;
-    border: 2px solid var(--primary-color);
-
-    background: #ffffff;
-    color: var(--primary-color);
-
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
-    font-weight: 700;
-
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: all 0.25s ease;
-    flex-shrink: 0;
-
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+.speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(20px, 4vw, 32px);
+    margin-top: clamp(40px, 6vw, 60px);
 }
 
-.nav-btn:hover {
-    background: var(--primary-color);
-    color: #ffffff;
-    transform: scale(1.08);
-}
-
-.nav-btn:active {
-    transform: scale(0.96);
-}
-
-.prev-btn { margin-right: 6px; }
-.next-btn { margin-left: 6px; }
-
-/* =========================================================
-   SPEAKERS – MOBILE BEHAVIOR
-   ========================================================= */
-@media (max-width: 768px) {
-    .nav-btn {
-        display: none;
-    }
-
-    .speaker-track-container {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
-
-    .speaker-card {
-        scroll-snap-align: center;
-        min-width: 85%;
+/* Responsive fallback */
+@media (max-width: 1024px) {
+    .speaker-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 600px) {
+    .speaker-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 
 /* =========================================================
    5. ABOUT SECTIONS – FLUID & READABLE
@@ -637,6 +646,19 @@ h2 {
     font-size: var(--fs-sm);
     color: var(--text-gray);
     line-height: 1.4;
+}
+
+/* Add to style.css under Committee Section */
+.comm-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2px;
+}
+
+.comm-pos {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: 0;
 }
 
 /* =========================================================

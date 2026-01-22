@@ -5,6 +5,7 @@ import { conferenceData } from './data.js';
 // =========================================
 document.addEventListener('DOMContentLoaded', () => {
     renderNavigation();
+    renderRibbon();
     renderHero();
     renderAbout();
     renderThemes();
@@ -40,6 +41,32 @@ function setupMobileMenu() {
             btn.classList.toggle('open');
         });
     }
+}
+
+// =========================================
+// SCROLLING RIBBON
+// =========================================
+function renderRibbon() {
+    const container = document.getElementById('scrolling-ribbon');
+    if (!container) return;
+
+    // 1. Format the data string
+    const dataItems = conferenceData.importantDates.map(item => 
+        `<div class="ribbon-item">
+            <span>${item.description}:</span> 
+            <span style="color:#d32f2f">${item.date}</span>
+         </div>`
+    ).join('');
+
+    // 2. Inject HTML
+    // We duplicate the content twice inside the track to create the seamless loop
+    container.innerHTML = `
+        <div class="ribbon-track">
+            ${dataItems} ${dataItems} ${dataItems} 
+        </div>
+    `;
+    // Note: I repeated it 3 times above to ensure it fills wide screens 
+    // before the animation loop takes over.
 }
 
 
@@ -172,9 +199,12 @@ function renderThemes() {
 // =========================================
 // SPEAKERS SECTION (Dynamic Carousel)
 // =========================================
+// =========================================
+// SPEAKERS SECTION (STATIC GRID – NO CAROUSEL)
+// =========================================
 function renderSpeakers() {
     const speakerSection = document.getElementById('speakers-section');
-    
+
     const cards = conferenceData.speakers.map(person => `
         <div class="speaker-card">
             <div class="speaker-img-wrapper">
@@ -191,71 +221,16 @@ function renderSpeakers() {
     speakerSection.innerHTML = `
         <div class="container">
             <h2 class="text-center">Keynote Speakers</h2>
-            
-            <div class="speaker-carousel-wrapper">
-                <button class="nav-btn prev-btn" id="spk-prev">&lt;</button>
-                
-                <div class="speaker-track-container">
-                    <div class="speaker-track" id="speaker-track">
-                        ${cards}
-                    </div>
-                </div>
-                
-                <button class="nav-btn next-btn" id="spk-next">&gt;</button>
+
+            <div class="speaker-grid">
+                ${cards}
             </div>
         </div>
     `;
 }
 
-/* =========================================
-   UPDATED CAROUSEL LOGIC (True Infinite)
-   ========================================= */
-function setupSpeakerCarousel() {
-    const track = document.getElementById('speaker-track');
-    const prevBtn = document.getElementById('spk-prev');
-    const nextBtn = document.getElementById('spk-next');
-    
-    if (!track) return;
 
-    const cardWidth = 320; // Must match CSS card width + gap
-    
-    const moveSlide = (direction) => {
-        // 1. Calculate how far to scroll
-        const scrollAmt = direction === 'next' ? cardWidth : -cardWidth;
 
-        // 2. Perform the smooth scroll
-        track.scrollBy({ left: scrollAmt, behavior: 'smooth' });
-
-        // 3. AFTER the scroll animation ends (500ms), shuffle the DOM elements
-        // This is the trick that makes it infinite without rewinding
-        setTimeout(() => {
-            // Disable smooth scrolling temporarily for the instant snap
-            track.style.scrollBehavior = 'auto'; 
-
-            if (direction === 'next') {
-                // Move first item to the end
-                track.appendChild(track.firstElementChild);
-                // Snap scrollbar back to account for the moved item
-                track.scrollLeft -= cardWidth;
-            } else {
-                // Move last item to the front
-                track.prepend(track.lastElementChild);
-                // Snap scrollbar forward
-                track.scrollLeft += cardWidth;
-            }
-            
-            // Re-enable smooth scrolling for the next click
-            track.style.scrollBehavior = 'smooth';
-        }, 500); // Wait 500ms for CSS transition to finish
-    };
-
-    // Event Listeners
-    nextBtn.addEventListener('click', () => moveSlide('next'));
-    prevBtn.addEventListener('click', () => moveSlide('prev'));
-
-    // Auto Rotate
-    setInterval(() => moveSlide('next'), 4000);
-}
 
 
 // =========================================
@@ -267,9 +242,13 @@ function renderCommittees() {
     // Helper to generate grid HTML
     const createGrid = (members) => members.map(m => `
         <div class="committee-card">
-            <img src="${m.image}" alt="${m.name}" loading="lazy">
+            <div class="committee-img-frame">
+                <img src="${m.image}" alt="${m.name}" loading="lazy">
+            </div>
             <h4>${m.name}</h4>
-            <p>${m.title}</p>
+            <p class="comm-title">${m.title}</p>
+            
+            ${m.position ? `<p class="comm-pos">${m.position}</p>` : ''}
         </div>
     `).join('');
 
@@ -305,13 +284,15 @@ function renderAdvisory() {
     section.innerHTML = `
         <div class="container">
             <div class="advisory-wrapper">
-                <div class="advisory-col">
+            <!--
+                            <div class="advisory-col">
                     <h3>International Advisory Board</h3>
                     <ul class="advisory-list">
                     ${createList(conferenceData.internationalAdvisory)}
                         
                     </ul>
-                </div>
+                </div>  -->
+
                 <div class="advisory-col">
                     <h3>National Advisory Board</h3>
                     <ul class="advisory-list">
