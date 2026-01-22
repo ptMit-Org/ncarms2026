@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderRegistration();
     renderDates();
     renderFooter();
-    
+
     // Initialize interactive elements
     setupSpeakerCarousel();
     setupMobileMenu();
@@ -28,14 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderNavigation() {
     // Updates the logo text based on data
     const logoEl = document.getElementById('nav-logo');
-    if(logoEl) logoEl.innerText = conferenceData.conferenceName;
+    if (logoEl) logoEl.innerText = conferenceData.conferenceName;
 }
 
 function setupMobileMenu() {
     const btn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('.nav-links');
-    
-    if(btn && nav) {
+
+    if (btn && nav) {
         btn.addEventListener('click', () => {
             nav.classList.toggle('active');
             btn.classList.toggle('open');
@@ -51,7 +51,7 @@ function renderRibbon() {
     if (!container) return;
 
     // 1. Format the data string
-    const dataItems = conferenceData.importantDates.map(item => 
+    const dataItems = conferenceData.importantDates.map(item =>
         `<div class="ribbon-item">
             <span>${item.description}:</span> 
             <span style="color:#d32f2f">${item.date}</span>
@@ -112,7 +112,7 @@ function renderHero() {
             </div>
         </div>
     `;
-    
+
     // Auto-rotate Hero Carousel (Simple Fade)
     startHeroCarousel();
 }
@@ -120,7 +120,7 @@ function renderHero() {
 function startHeroCarousel() {
     const slides = document.querySelectorAll('.hero-slide');
     if (slides.length === 0) return;
-    
+
     let current = 0;
     setInterval(() => {
         slides[current].classList.remove('active');
@@ -132,14 +132,14 @@ function startHeroCarousel() {
 
 function renderAbout() {
     // 1. UPDATE THIS LINE: Target your new HTML ID
-    const topSlot = document.getElementById('conference-display-section'); 
-    
+    const topSlot = document.getElementById('conference-display-section');
+
     // 2. Keep the bottom slot target (assuming you still have this in HTML for the others)
     const bottomSlot = document.getElementById('other-about-section');
-    
+
     // 3. Find "About Conference" data
     const topData = conferenceData.aboutSections.find(item => item.id === 'about-conference');
-    
+
     // 4. Find everything else
     const bottomData = conferenceData.aboutSections.filter(item => item.id !== 'about-conference');
 
@@ -175,13 +175,10 @@ function generateAboutHTML(section) {
 // =========================================
 function renderThemes() {
     const themeSection = document.getElementById('themes-section');
-    
+
     const cards = conferenceData.themes.map(theme => `
         <div class="theme-card">
-            <div class="theme-icon">
-                <img src="${theme.image}" alt="${theme.title}" loading="lazy">
-            </div>
-            <h3>${theme.title}</h3>
+            <h3 style="vertical-align: middle;">${theme.title}</h3>
         </div>
     `).join('');
 
@@ -213,7 +210,7 @@ function renderSpeakers() {
             <div class="speaker-info">
                 <h3>${person.name}</h3>
                 <p class="role">${person.title}, ${person.institution}</p>
-                <div class="topic-tag">Topic: ${person.topic}</div>
+                <div class="topic-tag"><text class="topic-tag-text">Topic: ${person.topic}</text></div>
             </div>
         </div>
     `).join('');
@@ -238,7 +235,7 @@ function renderSpeakers() {
 // =========================================
 function renderCommittees() {
     const section = document.getElementById('committee-section');
-    
+
     // Helper to generate grid HTML
     const createGrid = (members) => members.map(m => `
         <div class="committee-card">
@@ -259,7 +256,7 @@ function renderCommittees() {
                 ${createGrid(conferenceData.organizingCommittee)}
             </div>
 
-            <h2 class="text-center" style="margin-top: 60px;">Support Committee</h2>
+            <h2 class="text-center" style="margin-top: 60px;">Committee Members</h2>
             <div class="committee-grid">
                 ${createGrid(conferenceData.supportCommittee)}
             </div>
@@ -273,7 +270,7 @@ function renderCommittees() {
 // =========================================
 function renderAdvisory() {
     const section = document.getElementById('advisory-section');
-    
+
     const createList = (list) => list.map(m => `
         <li class="advisory-item">
             <strong>${m.name}</strong>
@@ -311,14 +308,13 @@ function renderAdvisory() {
 function renderRegistration() {
     const section = document.getElementById('registration-section');
     const bank = conferenceData.bankDetails;
-    
+
     const feesCards = conferenceData.fees.map(fee => `
         <div class="fee-card">
             <div class="fee-header">${fee.category}</div>
             <div class="fee-price">
                 <span class="currency">INR</span> ${fee.priceINR}
             </div>
-            <div class="fee-subprice">USD ${fee.priceUSD}</div>
             <p class="fee-note">${fee.note}</p>
             <a href="#contact-section" class="btn-outline">Register Now</a>
         </div>
@@ -352,7 +348,7 @@ function renderRegistration() {
 // =========================================
 function renderDates() {
     const section = document.getElementById('dates-section');
-    
+
     const datesHtml = conferenceData.importantDates.map(item => `
         <div class="date-row">
             <span class="date-desc">${item.description}</span>
@@ -378,17 +374,19 @@ function renderFooter() {
         <div class="container footer-grid">
             <div class="footer-col">
                 <h4>Contact Us</h4>
-                <p>${c.address}</p>
-                <p>Email: <a href="mailto:${c.email}">${c.email}</a></p>
-                <p>Phone: ${c.phone}</p>
+                <p>Email: <a href="mailto:${c.email1}">${c.email1}</a></p>
+                <!-- <p>Phone: ${c.phone1}</p> -->
+                <p>Email: <a style="margin-right:10px;" href="mailto:${c.email2}">${c.email2}</a>&nbsp;&nbsp; Phone: ${c.phone2}</p>
+                <p>Email: <a style="margin-right:10px;" href="mailto:${c.email3}">${c.email3}</a> Phone: ${c.phone3}</p>
+                <p>Email: <a style="margin-right:10px;" href="mailto:${c.email4}">${c.email4}</a>&nbsp;&nbsp;&nbsp; Phone: ${c.phone4}</p>
+                <p>Email: <a style="margin-right:10px;" href="mailto:${c.email5}">${c.email5}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone: ${c.phone5}</p>                            
             </div>
             <div class="footer-col map-col">
                 <h4>Location</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.59!2d80.14!3d12.94!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU2JzU1LjYiTiA4MMKwMDgnMzUuMiJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
-                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+                <p>&#128205 ${c.address}</p><a href="https://maps.app.goo.gl/5B4NDPPP551KaAFe7" style="padding: 7px 15px; background-color: white; display: inline-block; color: black; margin-top:15px; border-radius: 4px; font-size:16px;">View On Map<a>
+                
         </div>
-        <div class="copyright">
+        <div class="copyrt">
             &copy; ${new Date().getFullYear()} ${conferenceData.conferenceName}. All Rights Reserved.
         </div>
     `;

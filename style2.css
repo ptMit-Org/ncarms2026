@@ -507,11 +507,16 @@ h2 {
     font-size: var(--fs-xs);
     font-weight: 700;
     padding: clamp(5px, 1vw, 6px) clamp(10px, 2vw, 12px);
-
+    padding-left: 25px;
+    padding-right: 25px;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     border-radius: 999px;
     text-transform: uppercase;
+}
+.topic-tag-text {
+    font-weight: bold;
+    text-align: center;
 }
 /* =========================================================
    SPEAKERS – STATIC 4-COLUMN GRID
@@ -576,7 +581,7 @@ h2 {
 
 .theme-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: clamp(24px, 4vw, 40px);
     margin-top: clamp(40px, 6vw, 60px);
 }
@@ -593,6 +598,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: clamp(14px, 3vw, 18px);
 }
 
@@ -750,7 +756,7 @@ h2 {
 /* Grid wrapper – FORCE 4 COLUMNS */
 .fees-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: clamp(20px, 3vw, 32px);
 
     margin-top: clamp(40px, 5vw, 60px);
@@ -948,13 +954,6 @@ h2 {
     color: var(--primary-color);
 }
 
-/* Map column */
-.map-col iframe {
-    border-radius: var(--radius);
-    border: none;
-    filter: grayscale(100%) contrast(1.1);
-}
-
 /* Divider */
 .footer-divider {
     margin-top: clamp(40px, 6vw, 60px);
@@ -963,9 +962,14 @@ h2 {
 
 /* Copyright */
 .copyright {
-    margin-top: clamp(20px, 4vw, 30px);
+    /* margin-top: clamp(20px, 4vw, 30px); */
     text-align: center;
-
+    display: block;
     font-size: var(--fs-xs);
     opacity: 0.6;
+}
+
+.copyrt {
+    text-align: center;
+    transform: translateX(37.5%);
 }
