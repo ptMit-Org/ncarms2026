@@ -94,12 +94,12 @@ function renderHero() {
                 <p class="hero-subtitle">${data.subtitle}</p>
                 <div class="hero-info">
                     <div class="info-item">
-                        <strong>University</strong>
+                        <strong>Madras Institute of Technology</strong>
                         <span>${conferenceData.universityName}</span>
                     </div>
                     <div class="info-item">
-                        <strong>Date</strong>
-                        <span>${date}</span>
+                        <strong></strong>
+                        <!--  <span>${date}</span> -->
                     </div>
                 </div>
                 <a href="#registration-section" class="cta-button">Secure Your Seat</a>
@@ -209,7 +209,7 @@ function renderSpeakers() {
             </div>
             <div class="speaker-info">
                 <h3>${person.name}</h3>
-                <p class="role">${person.title}, ${person.institution}</p>
+                <p class="role">${person.title} ${person.institution}</p>
                 <div class="topic-tag"><text class="topic-tag-text">Topic: ${person.topic}</text></div>
             </div>
         </div>
@@ -272,32 +272,32 @@ function renderAdvisory() {
     const section = document.getElementById('advisory-section');
 
     const createList = (list) => list.map(m => `
-        <li class="advisory-item">
+        <!-- <li class="advisory-item">
             <strong>${m.name}</strong>
             <span>${m.title}</span>
-        </li>
+        </li> -->
     `).join('');
 
     section.innerHTML = `
-        <div class="container">
+        <!-- <div class="container">
             <div class="advisory-wrapper">
-            <!--
+            
                             <div class="advisory-col">
                     <h3>International Advisory Board</h3>
                     <ul class="advisory-list">
                     ${createList(conferenceData.internationalAdvisory)}
                         
                     </ul>
-                </div>  -->
+                </div>  
 
                 <div class="advisory-col">
                     <h3>National Advisory Board</h3>
                     <ul class="advisory-list">
                         ${createList(conferenceData.nationalAdvisory)}
                     </ul>
-                </div>
+                </div> 
             </div>
-        </div>
+        </div>  -->
     `;
 }
 
@@ -338,6 +338,16 @@ function renderRegistration() {
                     <div class="bank-item"><span>MICR:</span> ${bank.micr}</div>
                 </div>
             </div>
+            <div class="bank-grid" style="margin-top: 20px;">
+                <div>
+                    
+                    <div class="bank-item"><h3>Publication Info</h3>All accepted and presented papers will be published in the conference proceedings with an ISBN number.</div>
+                </div>
+                <div>
+                    
+                    <div class="bank-item"><h3>Accommodation </h3>Accommodation will be provided to the participants on prior request in the hostels on a payment basis.</div>
+                </div>
+            </div>
         </div>
     `;
 }
@@ -374,12 +384,8 @@ function renderFooter() {
         <div class="container footer-grid">
             <div class="footer-col">
                 <h4>Contact Us</h4>
-                <p>Email: <a href="mailto:${c.email1}">${c.email1}</a></p>
-                <!-- <p>Phone: ${c.phone1}</p> -->
-                <p>Email: <a style="margin-right:10px;" href="mailto:${c.email2}">${c.email2}</a>&nbsp;&nbsp; Phone: ${c.phone2}</p>
-                <p>Email: <a style="margin-right:10px;" href="mailto:${c.email3}">${c.email3}</a> Phone: ${c.phone3}</p>
-                <p>Email: <a style="margin-right:10px;" href="mailto:${c.email4}">${c.email4}</a>&nbsp;&nbsp;&nbsp; Phone: ${c.phone4}</p>
-                <p>Email: <a style="margin-right:10px;" href="mailto:${c.email5}">${c.email5}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone: ${c.phone5}</p>                            
+                <p>Email: <a href="mailto:${c.email}">${c.email}</a></p>
+                <p>Phone: ${c.phone}</p>                           
             </div>
             <div class="footer-col map-col">
                 <h4>Location</h4>
