@@ -393,7 +393,7 @@ function renderFooter() {
                 
         </div>
         <div class="copyrt">
-            &copy; ${new Date().getFullYear()} ${conferenceData.conferenceName}. All Rights Reserved.
+            &copy;NCARMS - ${new Date().getFullYear()} . All Rights Reserved.
         </div>
     `;
 }

@@ -85,9 +85,9 @@ export const conferenceData = {
 
     // --- SPEAKERS (Carousel Data) ---
     speakers: [
-        { name: "Prof. Somashekhar S. Hiremath", title: "", institution: "Indian Institute of Technology, Madras", topic: "Waypoint tracking and obstacle avoidance of differential drive wheeled mobile robot", image: "assets/image.png" },
-        { name: "Prof. Sreekumar M", title: "", institution: "IIITDM Kancheepuram", topic: "The Future of Robotics and Automation", image: "assets/image.png" },
-        { name: "Dr. S. Joseph Winston", title: "", institution: "Scientist-H, Indiara Gandhi Centre for Atomic Research", topic: "Remote calibration of robotic inspection system", image: "assets/image.png" },
+        { name: "Prof. Somashekhar S. Hiremath", title: "", institution: "Indian Institute of Technology, Madras", topic: "Waypoint tracking and obstacle avoidance of differential drive wheeled mobile robot", image: "assets/organizing/Prof-Somashekhar-S-Hiremath.png" },
+        { name: "Prof. Sreekumar M", title: "", institution: "IIITDM Kancheepuram", topic: "The Future of Robotics and Automation", image: "assets/organizing/dr-Sreekumar-M.png" },
+        { name: "Dr. S. Joseph Winston", title: "", institution: "Scientist-H, Indiara Gandhi Centre for Atomic Research", topic: "Remote calibration of robotic inspection system", image: "assets/organizing/joseph-winston.png" },
         // { name: "Julian Ross", title: "Founder", institution: "Decentralized Dev", topic: "Blockchain", image: "assets/image.png" },
         // Add more speakers here to test the carousel logic later
         // { name: "Dr. A. Kumar", title: "Professor", institution: "IIT Madras", topic: "Machine Learning", image: "assets/image.png" },
@@ -95,33 +95,33 @@ export const conferenceData = {
 
     // --- ORGANIZING COMMITTEE (Stacked Grid) ---
     organizingCommittee: [
-        { name: "Dr. P. Shankar, I.A.S", title: "Chief Patron", position: "Convenor<br>Secretary to Government,<br>Higher Education Department,<br>Government of Tamil Nadu. ", image: "assets/image.png" },
-        { name: "Dr. S. Visakan, I.A.S.", title: "Chief Patron", position: "Member<br>Director,<br>Directorate of Technical Education,<br>Government of Tamil Nadu.", image: "assets/image.png" },
-        { name: "Dr. B.T.N. Sridhar", title: "Chief Patron", position: "Member<br>Professor,<br>Dept. of Aerospace Engineering,MIT Campus, <br>Anna University, Chennai", image: "assets/image.png" },
-        { name: "Dr. V. Kumaresan", title: "Patron", position: "Registrar (i/c)<br>Anna University, Chennai", image: "assets/image.png" },
-        { name: "Dr. P. Jayashree", title: "Co-Patron", position: "Professor & Dean<br>MIT Campus, Anna University, Chennai ", image: "assets/image.png" },
-        { name: "Dr. J. Jancirani", title: "Chair", position: "Professor & Head<br>Dept. of Production Technology, MIT Campus,<br>Anna University, Chennai", image: "assets/image.png" },
-        { name: "Dr. S. Vijayakumar", title: "Co-Ordinator", position: "Associate Professor<br>Dept. of Production Technology,<br>MIT Campus", image: "assets/image.png" },
-        { name: "Dr. V. Mugendiran", title: "Co-Ordinator ", position: "Assistant Professor (Sl. Gr.)<br>Dept. of Production Technology,<br>MIT Campus", image: "assets/image.png" },
-        { name: "Dr. P. Karthikeyan", title: "Co-Ordinator ", position: "Assistant Professor (Sl. Gr.)<br>Dept. of Production Technology,<br>MIT Campus", image: "assets/image.png" },
-        { name: "Dr. S. Sathish", title: "Co-Ordinator", position: "Assistant Professor<br>Dept. of Production Technology,<br>MIT Campus", image: "assets/image.png" }
+        { name: "Dr. P. Shankar, I.A.S", title: "Chief Patron", position: "Convenor<br>Secretary to Government,<br>Higher Education Department,<br>Government of Tamil Nadu. ", image: "assets/organizing/sankar-ias.png" },
+        { name: "Dr. S. Visakan, I.A.S.", title: "Chief Patron", position: "Member<br>Director,<br>Directorate of Technical Education,<br>Government of Tamil Nadu.", image: "assets/organizing/visakan.png" },
+        { name: "Dr. B.T.N. Sridhar", title: "Chief Patron", position: "Member<br>Professor,<br>Dept. of Aerospace Engineering,MIT Campus, <br>Anna University, Chennai", image: "assets/organizing/btn-sridhar.png" },
+        { name: "Dr. V. Kumaresan", title: "Patron", position: "Registrar (i/c)<br>Anna University, Chennai", image: "assets/organizing/v-kumaresan.png" },
+        { name: "Dr. P. Jayashree", title: "Co-Patron", position: "Professor & Dean<br>MIT Campus, Anna University, Chennai ", image: "assets/organizing/dr-jayasree.png" },
+        { name: "Dr. J. Jancirani", title: "Chair", position: "Professor & Head<br>Dept. of Production Technology, MIT Campus,<br>Anna University, Chennai", image: "assets/organizing/JanciRani-Hod.png" },
+        { name: "Dr. S. Vijayakumar", title: "Co-Ordinator", position: "Associate Professor<br>Dept. of Production Technology,<br>MIT Campus", image: "assets/organizing/vijayakumar.png" },
+        { name: "Dr. V. Mugendiran", title: "Co-Ordinator ", position: "Assistant Professor (Sl. Gr.)<br>Dept. of Production Technology,<br>MIT Campus", image: "assets/organizing/mugendiran.png" },
+        { name: "Dr. P. Karthikeyan", title: "Co-Ordinator ", position: "Assistant Professor (Sl. Gr.)<br>Dept. of Production Technology,<br>MIT Campus", image: "assets/organizing/karthikeyan.png" },
+        { name: "Dr. S. Sathish", title: "Co-Ordinator", position: "Assistant Professor<br>Dept. of Production Technology,<br>MIT Campus", image: "assets/organizing/sathish.png" }
     ],
 
     // --- SUPPORT COMMITTEE (Similar style to Organizing) ---
     supportCommittee: [
-        { name: "Dr. A. Siddharthan", title: "Professor", image: "assets/image.png" },
-        { name: "Dr. G.B. Bhaskar", title: "Professor", image: "assets/image.png" },
-        { name: "Dr. P. Ganesh", title: "Associate Professor", image: "assets/image.png" },
-        { name: "Dr. C. Nandakumar", title: "Associate Professor", image: "assets/image.png" },
-        { name: "Dr. N. Srirangarajalu", title: "Assistant Professor  (Sl. Gr.)", image: "assets/image.png" },
-        { name: "Dr. G. Kumaresan", title: "Assistant Professor", image: "assets/image.png" },
-        { name: "Dr. E. Pavithra", title: "Assistant Professor", image: "assets/image.png" },
-        { name: "Dr. C. Aryn Prakash", title: "Assistant Professor", image: "assets/image.png" },
-        { name: "Dr. M. Manoj", title: "Teaching Fellow", image: "assets/image.png" },
-        { name: "Mr. P. Rethinam", title: "Teaching Fellow", image: "assets/image.png" },
-        { name: "Mr. P. Mani", title: "Teaching Fellow", image: "assets/image.png" },
-        { name: "Mr. K. Tamilarasan", title: "Teaching Fellow", image: "assets/image.png" },
-        { name: "Mr. K. Muthukumaran", title: "Teaching Fellow", image: "assets/image.png" }
+        { name: "Dr. A. Siddharthan", title: "Professor", image: "assets/organizing/siddharthan.png" },
+        { name: "Dr. G.B. Bhaskar", title: "Professor", image: "assets/organizing/g-bhaskar.png" },
+        { name: "Dr. P. Ganesh", title: "Associate Professor", image: "assets/organizing/ganesh.png" },
+        { name: "Dr. C. Nandakumar", title: "Associate Professor", image: "assets/organizing/nandakumar.png" },
+        { name: "Dr. N. Srirangarajalu", title: "Assistant Professor  (Sl. Gr.)", image: "assets/organizing/srirangarajalu.png" },
+        { name: "Dr. G. Kumaresan", title: "Assistant Professor", image: "assets/organizing/g-kumaresan.png" },
+        { name: "Dr. E. Pavithra", title: "Assistant Professor", image: "assets/organizing/pavithra.png" },
+        { name: "Dr. C. Arun Prakash", title: "Assistant Professor", image: "assets/organizing/arun-prakash.png" },
+        { name: "Dr. M. Manoj", title: "Teaching Fellow", image: "assets/organizing/manoj.png" },
+        { name: "Mr. P. Rethinam", title: "Teaching Fellow", image: "assets/organizing/rethinam.png" },
+        { name: "Mr. P. Mani", title: "Teaching Fellow", image: "assets/organizing/mani.png" },
+        { name: "Mr. K. Tamilarasan", title: "Teaching Fellow", image: "assets/organizing/tamilarasan.png" },
+        { name: "Mr. K. Muthukumaran", title: "Teaching Fellow", image: "assets/organizing/muthukumaran.png" }
         // { name: "head",  title: "Teaching Fellow", image: "assets/image.png" },
         // { name: "head",  title: "Teaching Fellow", image: "assets/image.png" },
         // { name: "head",  title: "Teaching Fellow", image: "assets/image.png" },
