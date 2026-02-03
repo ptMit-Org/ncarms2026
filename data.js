@@ -15,9 +15,15 @@ export const conferenceData = {
         location: "University Main Hall",
         // These images will act as the carousel on the right side of the hero
         carouselImages: [
-            "assets/image.png",
-            "assets/image.png",
-            "assets/image.png"
+            "assets/img1.JPG",
+            "assets/img2.JPG",
+            "assets/img3.JPG",
+            "assets/img4.JPG",
+            "assets/img5.JPG",
+            "assets/img6.JPG",
+            "assets/img7.JPG",
+            "assets/img8.JPG",
+
         ]
     },
 
@@ -85,7 +91,7 @@ export const conferenceData = {
 
     // --- SPEAKERS (Carousel Data) ---
     speakers: [
-        { name: "Prof. Somashekhar S. Hiremath", title: "", institution: "Indian Institute of Technology, Madras", topic: "Waypoint tracking and obstacle avoidance of differential drive wheeled mobile robot", image: "assets/organizing/Prof-Somashekhar-S-Hiremath.png" },
+        { name: "Prof. Somashekhar S. Hiremath", title: "", institution: "Indian Institute of Technology, Madras", topic: "Waypoint tracking and obstacle avoidance of differential drive wheeled mobile robot", image: "assets/organizing/somasekar.jpeg" },
         { name: "Prof. Sreekumar M", title: "", institution: "IIITDM Kancheepuram", topic: "The Future of Robotics and Automation", image: "assets/organizing/dr-Sreekumar-M.png" },
         { name: "Dr. S. Joseph Winston", title: "", institution: "Scientist-H, Indiara Gandhi Centre for Atomic Research", topic: "Remote calibration of robotic inspection system", image: "assets/organizing/joseph-winston.png" },
         // { name: "Julian Ross", title: "Founder", institution: "Decentralized Dev", topic: "Blockchain", image: "assets/image.png" },

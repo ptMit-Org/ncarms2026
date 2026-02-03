@@ -88,6 +88,8 @@ function renderHero() {
     heroSection.innerHTML = `
         <div class="hero-container">
             <div class="hero-content">
+            <h1 class="hero-main-title">Welcome to</h1>
+
                 <span class="hero-conference-name">${conferenceData.conferenceName}</span>
                 <div class="hero-divider"></div>
                 <h1 class="hero-title">${data.title}</h1>
@@ -161,13 +163,14 @@ function generateAboutHTML(section) {
             <div class="container">
                 <h2 class="section-title">${section.title}</h2>
                 <div class="section-divider"></div>
-                <p class="section-text" style="max-width: 800px; opacity: 0.9;">
+                <p class="section-text">
                     ${section.description}
                 </p>
             </div>
         </div>
     `;
 }
+
 
 
 // =========================================
