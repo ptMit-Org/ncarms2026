@@ -92,7 +92,7 @@ export const conferenceData = {
     // --- SPEAKERS (Carousel Data) ---
     speakers: [
         { name: "Prof. Somashekhar S. Hiremath", title: "", institution: "Indian Institute of Technology, Madras", topic: "Waypoint tracking and obstacle avoidance of differential drive wheeled mobile robot", image: "assets/organizing/somasekar.jpeg" },
-        { name: "Prof. Sreekumar M", title: "", institution: "IIITDM Kancheepuram", topic: "The Future of Robotics and Automation", image: "assets/organizing/dr-Sreekumar-M.png" },
+        { name: "Prof. Sreekumar M", title: "", institution: "IIITDM Kancheepuram", topic: "The Future of Robotics and Automation", image: "assets/organizing/sreekumar.png" },
         { name: "Dr. S. Joseph Winston", title: "", institution: "Scientist-H, Indiara Gandhi Centre for Atomic Research", topic: "Remote calibration of robotic inspection system", image: "assets/organizing/joseph-winston.png" },
         // { name: "Julian Ross", title: "Founder", institution: "Decentralized Dev", topic: "Blockchain", image: "assets/image.png" },
         // Add more speakers here to test the carousel logic later

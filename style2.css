@@ -667,7 +667,7 @@ HERO CAROUSEL – FULL IMAGE MODE===============================================
 #about-conference {
     background:
         linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-        url("../assets/robo.avif");
+        url("assets/robo.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -680,7 +680,7 @@ HERO CAROUSEL – FULL IMAGE MODE===============================================
 #about-university {
     background:
         linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-        url("../assets/anna.jpeg");
+        url("assets/anna.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -692,7 +692,7 @@ HERO CAROUSEL – FULL IMAGE MODE===============================================
 #about-institution {
     background:
         linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-        url("../assets/mitimg.jpeg");
+        url("assets/mitimg.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -704,7 +704,7 @@ HERO CAROUSEL – FULL IMAGE MODE===============================================
 #about-department {
     background:
         linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-        url("../assets/ptdept.jpeg");
+        url("assets/ptdept.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
