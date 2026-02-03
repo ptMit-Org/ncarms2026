@@ -502,13 +502,14 @@ HERO CAROUSEL – FULL IMAGE MODE===============================================
 
 /* ---- Image ---- */
 .speaker-img-wrapper img {
-    width: clamp(60%, 70%, 80%);
-    height: clamp(60%, 70%, 80%);
-    /* width: 90%;
-    height: 90%; */
-    object-fit: contain;
+    width: 88%;
+    height: 88%;
+    object-fit: cover;
+    /* KEY CHANGE */
+    border-radius: 12px;
     transition: transform 0.4s ease;
 }
+
 
 .speaker-card:hover .speaker-img-wrapper img {
     transform: scale(1.05);
@@ -818,17 +819,49 @@ HERO CAROUSEL – FULL IMAGE MODE===============================================
 }
 
 /* Add to style.css under Committee Section */
+/* =========================================================
+   COMMITTEE CARD – CLEAN ROLE STACKING
+   ========================================================= */
+
+/* Committee role (Chief Patron / Patron etc.) */
 .comm-title {
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 2px;
+    margin: 6px 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
+/* Designation / Position block */
 .comm-pos {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--text-gray);
-    margin-top: 0;
+    line-height: 1.35;
+    max-width: 220px;
+    margin: 0 auto;
 }
+
+/* Reduce spacing between multiple lines */
+.committee-card p {
+    margin-bottom: 4px;
+}
+
+/* Optional: soften long text visually */
+.committee-card p:not(.comm-title) {
+    opacity: 0.9;
+}
+
+.committee-card h4::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: rgba(138, 28, 37, 0.3);
+    margin: 8px auto 6px;
+    border-radius: 2px;
+}
+
 
 /* =========================================================
    6. ADVISORY BOARD – CARD GRID (SCALABLE)
