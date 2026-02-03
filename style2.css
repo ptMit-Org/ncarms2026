@@ -664,8 +664,16 @@ HERO CAROUSEL – FULL IMAGE MODE===============================================
 
 /* About Conference (kept as gradient) */
 #about-conference {
-    background: linear-gradient(180deg, #8a1c25, #5d1218);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../assets/robo.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    color: #ffffff;
 }
+
 
 /* About University – IMAGE ADDED */
 #about-university {
