@@ -351,6 +351,18 @@ function renderRegistration() {
                     <div class="bank-item"><h3>Accommodation </h3>Accommodation will be provided to the participants on prior request in the hostels on a payment basis.</div>
                 </div>
             </div>
+
+            
+            <div class="bank-grid" style="margin-top: 20px;">
+                <div>
+                    
+                    <div class="bank-item"><h3>Registration Link:</h3><a href="https://forms.gle/dnLE1cAc5LQgY48V6">Click here to Register</a> </div>
+                </div>
+                <div>
+                    
+                    <div class="bank-item"><h3>Paper Template Link:</h3><a href="https://docs.google.com/document/d/1kmrECYwq80AqUnyj6q87-VPfSLKKyD4s/edit">Template Link &#128279;</a></div>
+                </div>
+            </div>
         </div>
     `;
 }
