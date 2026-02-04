@@ -104,7 +104,11 @@ function renderHero() {
                         <!--  <span>${date}</span> -->
                     </div>
                 </div>
-                <a href="#registration-section" class="cta-button">Secure Your Seat</a>
+                <a href="https://forms.gle/dnLE1cAc5LQgY48V6" class="cta-button">Register Now</a>
+                <a href="assets/Paper-Template.doc" download class="cta-button">Paper Template</a>
+                <a href="#registration-section" class="cta-button">Registration Info</a>
+
+
             </div>
             
             <div class="hero-carousel">
@@ -354,20 +358,22 @@ function renderRegistration() {
 
             
             <div class="cta-grid" style="margin-top: 20px;">
+
+                <div>
+                    
+                    <div class="cta-item">
+                        <h3>Paper Template:</h3>
+                        <a href="assets/Paper-Template.doc" download class="cta-button-2">Download Template</a>
+                        <div class="cta-qr"><img src="assets/paperTemp-qr.jpg" alt="paper-template-QR code"></div>
+                    </div>
+                </div>
+
                 <div>
                     
                     <div class="cta-item">
                         <h3>Registration Link:</h3>
                         <a href="https://forms.gle/dnLE1cAc5LQgY48V6" class="cta-button-2">Register Now&#128279;</a> 
                         <div class="cta-qr"><img src="assets/register-qr.png" alt="Register QR code"></div>
-                    </div>
-                </div>
-                <div>
-                    
-                    <div class="cta-item">
-                        <h3>Paper Template Link:</h3>
-                        <a href="https://docs.google.com/document/d/1kmrECYwq80AqUnyj6q87-VPfSLKKyD4s/edit" class="cta-button-2">Template Link&#128279;</a>
-                        <div class="cta-qr"><img src="assets/paperTemp-qr.jpg" alt="paper-template-QR code"></div>
                     </div>
                 </div>
             </div>

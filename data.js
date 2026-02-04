@@ -57,7 +57,7 @@ export const conferenceData = {
         {
             id: "about-department",
             title: `<a href="https://www.auegov.ac.in/Department/prod/">About the Department`,
-            description: "The Department of Production Technology was the fifth department established at MIT in 1977.The department have been sponsored and supported by AICTE, DST-FIST, UGC-DRS-SAP, NRB DRDO, DST-SERB, CMRG and Tamil Nadu Innovation Initiatives (TANII). The department is a part of UGC-University with Potential for Excellence (UPE). Accredited by NBA."
+            description: "The Department of Production Technology was the fifth department established at MIT in 1977.The department have been sponsored and supported by AICTE, DST-FIST, UGC-DRS-SAP, NRB DRDO, DST-SERB, CMRG and Tamil Nadu Innovation Initiatives (TANII). The department is a part of UGC-University with Potential for Excellence (UPE). Accredited by NBA.<br>COURSES OFFERED<br>Undergraduate:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB. E. Production Engineering<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB. E. Robotics & Automation<br>Postgraduate:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspM. E. Manufaturing Engineering<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspM. E. Mechatronics"
         }
         // {
         //     id: "about-ripe",
