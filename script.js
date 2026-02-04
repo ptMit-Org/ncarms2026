@@ -353,14 +353,22 @@ function renderRegistration() {
             </div>
 
             
-            <div class="bank-grid" style="margin-top: 20px;">
+            <div class="cta-grid" style="margin-top: 20px;">
                 <div>
                     
-                    <div class="bank-item"><h3>Registration Link:</h3><a href="https://forms.gle/dnLE1cAc5LQgY48V6">Click here to Register</a> </div>
+                    <div class="cta-item">
+                        <h3>Registration Link:</h3>
+                        <a href="https://forms.gle/dnLE1cAc5LQgY48V6" class="cta-button-2">Register Now&#128279;</a> 
+                        <div class="cta-qr"><img src="assets/register-qr.png" alt="Register QR code"></div>
+                    </div>
                 </div>
                 <div>
                     
-                    <div class="bank-item"><h3>Paper Template Link:</h3><a href="https://docs.google.com/document/d/1kmrECYwq80AqUnyj6q87-VPfSLKKyD4s/edit">Template Link &#128279;</a></div>
+                    <div class="cta-item">
+                        <h3>Paper Template Link:</h3>
+                        <a href="https://docs.google.com/document/d/1kmrECYwq80AqUnyj6q87-VPfSLKKyD4s/edit" class="cta-button-2">Template Link&#128279;</a>
+                        <div class="cta-qr"><img src="assets/paperTemp-qr.jpg" alt="paper-template-QR code"></div>
+                    </div>
                 </div>
             </div>
         </div>

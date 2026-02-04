@@ -188,7 +188,7 @@ export const conferenceData = {
     // --- REGISTRATION FEES (From your image) ---
     fees: [
         {
-            category: "Full Time Research Scholars / Students",
+            category: "Full Time Research Scholars / UG & PG Students",
             priceINR: "₹1000/-",
             priceUSD: "",
             note: "(inclusive of GST)"

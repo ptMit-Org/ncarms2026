@@ -379,6 +379,54 @@ h2 {
     color: var(--primary-color);
 }
 
+.cta-button-2 {
+    padding: clamp(14px, 2.5vw, 18px) clamp(10px, 5vw, 20px);
+    font-size: var(--fs-sm);
+    background: var(--primary-color);
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--radius);
+    border: 2px solid var(--primary-color);
+    transition: var(--transition);   
+    margin: 10px 0px;
+}
+
+.cta-button-2:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.cta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(clamp(220px, 24vw, 300px), 1fr));
+    gap: clamp(16px, 3vw, 20px);
+}
+
+.cta-item {
+    background: #ffffff;
+    padding: clamp(14px, 3vw, 20px) ;
+    padding-bottom: clamp(14px, 3vw, 30px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+}
+
+.cta-item h3{
+    margin-bottom: 20px;
+}
+
+.cta-button-2 a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cta-qr {
+    width: 100px;
+    float: right;
+    transform: translateY(-55px);
+}
 /* =========================================================
 HERO CAROUSEL – FULL IMAGE MODE=========================================================*/
 
@@ -591,6 +639,7 @@ HERO CAROUSEL – FULL IMAGE MODE===============================================
     width: 100%;
     padding: clamp(80px, 12vw, 120px) 0;
     color: #ffffff;
+    margin-bottom: 10px;
 }
 
 /* =========================================================
