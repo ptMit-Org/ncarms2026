@@ -365,7 +365,7 @@ h2 {
     padding: clamp(14px, 2.5vw, 18px) clamp(10px, 5vw, 20px);
     font-size: var(--fs-sm);
     /* background: var(--primary-color); */
-    background: rgb(51, 0, 255);
+    background: rgb(47, 81, 52);
 
     color: #ffffff;
     font-weight: 700;
@@ -373,28 +373,29 @@ h2 {
     letter-spacing: 1px;
     border-radius: var(--radius);
     transition: var(--transition);
-    animation: blink 0.8s ease 1s infinite forwards;
+    animation: blink 0.5s ease 1s infinite forwards;
 }
 
 @keyframes blink {
     0% {
-        background: rgb(255, 0, 0);
+        background: rgb(119, 21, 21);
     }
 
     50% {
-        background: rgb(123, 0, 255);
+        background: rgb(91, 56, 129);
 
     }
 
     100% {
-        background: red;
+        background: rgb(140, 44, 44);
     }
 
 }
 
 .cta-button:hover {
     background: transparent;
-    color: var(--primary-color);
+    color: rgb(47, 81, 52);
+
     animation: none;
 }
 
