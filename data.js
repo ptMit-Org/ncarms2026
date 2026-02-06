@@ -10,7 +10,7 @@ export const conferenceData = {
 
     // --- HERO SECTION ---
     hero: {
-        title: "AUTOMATION, ROBOTICS & MECHATRONIC SYSTEMS  2026",
+        title: "AUTOMATION, ROBOTICS & MECHATRONIC SYSTEMS 2026     Feb 19 & 20 2026",
         subtitle: "",
         location: "University Main Hall",
         // These images will act as the carousel on the right side of the hero
