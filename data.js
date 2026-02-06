@@ -57,7 +57,7 @@ export const conferenceData = {
         {
             id: "about-department",
             title: `<a href="https://www.auegov.ac.in/Department/prod/">About the Department`,
-            description: "The Department of Production Technology was the fifth department established at MIT in 1977.The department have been sponsored and supported by AICTE, DST-FIST, UGC-DRS-SAP, NRB DRDO, DST-SERB, CMRG and Tamil Nadu Innovation Initiatives (TANII). The department is a part of UGC-University with Potential for Excellence (UPE). Accredited by NBA."
+            description: "The Department of Production Technology was the fifth department established at MIT in 1977.The department have been sponsored and supported by AICTE, DST-FIST, UGC-DRS-SAP, NRB DRDO, DST-SERB, CMRG and Tamil Nadu Innovation Initiatives (TANII). The department is a part of UGC-University with Potential for Excellence (UPE). Accredited by NBA.<br>COURSES OFFERED<br>Undergraduate:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB. E. Production Engineering<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB. E. Robotics & Automation<br>Postgraduate:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspM. E. Manufaturing Engineering<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspM. E. Mechatronics"
         }
         // {
         //     id: "about-ripe",
@@ -188,7 +188,7 @@ export const conferenceData = {
     // --- REGISTRATION FEES (From your image) ---
     fees: [
         {
-            category: "Full Time Research Scholars / Students",
+            category: "Full Time Research Scholars / UG & PG Students",
             priceINR: "₹1000/-",
             priceUSD: "",
             note: "(inclusive of GST)"
@@ -225,10 +225,10 @@ export const conferenceData = {
 
     // --- IMPORTANT DATES (List View) ---
     importantDates: [
-        { description: "Paper Submission Deadline", date: "13/02/2026" },
-        { description: "Notification of Acceptance", date: "14/02/2026" },
+        { description: "Paper Submission Deadline", date: "<strike>05/02/2026</strike> &nbsp 14/02/2026" },
+        { description: "Notification of Acceptance", date: "07/02/2026" },
         // { description: "Camera Ready Paper", date: "28/02/2026" },
-        { description: "Registration Deadline", date: "16/02/2026" },
+        { description: "Registration Deadline", date: "10/02/2026" },
         { description: "Conference Dates", date: "19/02/2026 & 20/02/2026" }
     ],
 

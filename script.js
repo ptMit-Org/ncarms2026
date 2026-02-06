@@ -104,7 +104,11 @@ function renderHero() {
                         <!--  <span>${date}</span> -->
                     </div>
                 </div>
-                <a href="#registration-section" class="cta-button">Secure Your Seat</a>
+                <a href="https://forms.gle/dnLE1cAc5LQgY48V6" class="cta-button">Register Now</a>
+                <a href="assets/Paper-Template.doc" download class="cta-button">Paper Template</a>
+                <a href="#registration-section" class="cta-button">Registration Info</a>
+
+
             </div>
             
             <div class="hero-carousel">
@@ -349,6 +353,28 @@ function renderRegistration() {
                 <div>
                     
                     <div class="bank-item"><h3>Accommodation </h3>Accommodation will be provided to the participants on prior request in the hostels on a payment basis.</div>
+                </div>
+            </div>
+
+            
+            <div class="cta-grid" style="margin-top: 20px;">
+
+                <div>
+                    
+                    <div class="cta-item">
+                        <h3>Paper Template:</h3>
+                        <a href="assets/Paper-Template.doc" download class="cta-button-2">Download Template</a>
+                        <div class="cta-qr"><img src="assets/paperTemp-qr.jpg" alt="paper-template-QR code"></div>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div class="cta-item">
+                        <h3>Registration Link:</h3>
+                        <a href="https://forms.gle/dnLE1cAc5LQgY48V6" class="cta-button-2">Register Now&#128279;</a> 
+                        <div class="cta-qr"><img src="assets/register-qr.png" alt="Register QR code"></div>
+                    </div>
                 </div>
             </div>
         </div>
