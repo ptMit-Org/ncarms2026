@@ -225,7 +225,7 @@ export const conferenceData = {
 
     // --- IMPORTANT DATES (List View) ---
     importantDates: [
-        { description: "Paper Submission Deadline", date: "<strike>05/02/2026</strike> &nbsp 14/02/2026" },
+        { description: "Paper Submission Deadline", date: "<strike>05/02/2026</strike> &nbsp 13/02/2026" },
         { description: "Notification of Acceptance", date: "14/02/2026" },
         // { description: "Camera Ready Paper", date: "28/02/2026" },
         { description: "Registration Deadline", date: "16/02/2026" },
